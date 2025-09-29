@@ -4,7 +4,7 @@ from transformers import pipeline
 # This will handle tokenizer and model initialization internally
 classifier = pipeline(
     task="zero-shot-classification",
-    model="joeddav/xlm-roberta-large-xnli",
+    model="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
     device=-1  # Use CPU, change to 0 for GPU if available
 )
 
